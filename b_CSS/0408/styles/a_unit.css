@@ -1,0 +1,73 @@
+
+* {
+  margin: 0;
+}
+
+.box {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.px { 
+  /* 웹 사이트의 기본 글자 크기 : 16px */
+  font-size: 16px; 
+  width: 200px;
+}
+
+/* 부모(HTML)의 글자 크기를 자식요소(body)가 상속받음 */
+html {
+  font-size: 20px;
+}
+
+body {
+  font-size: 16px;
+}
+
+#container {
+  font-size: 20px;
+}
+
+.rem {
+  /* rem : html 요소의 글자 크기를 기준, 1rem = 16px */
+  font-size: 1rem;
+  width: 10rem;
+}
+
+.em {
+  font-size: 1em;
+  width: 10em;
+}
+
+.vw {
+  font-size: 2vw;
+  width: 50vw;
+}
+
+.vh {
+  font-size: 2vh;
+  width: 50vh;
+}
+
+
+#parent {
+  font-size: 32px;
+  width: 400px;
+}
+
+.persent {
+  /* .persent의 부모요소 - #parent */
+  font-size: 100%;
+  width: 50%;
+}
+
+/* 
+css 변수값 사용 예시 
+:root
+- CSS에서 HTML 문서의 루트 요소를 선택하는데 사용 
+- CSS 변수(사용자 정의 속성)의 전역 선언에 유용하게 사용 
+: 전체 문서에 걸쳐서 일관된 스타일 값을 유지하는데 사용 
+*/
+
+

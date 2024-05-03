@@ -1,0 +1,54 @@
+a:link {
+  /* 방문하지 X */
+  color: blue;
+  text-decoration: none; /* 밑줄 없앰 */
+}
+
+a:visited {
+  /* 
+    방문한 링크의 기본 스타일링
+    : 보라색 글자색 + 밑줄
+  */
+  color: purple;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: black;
+}
+
+/* 예제 실습 */
+
+#hoverButton:hover {
+  color: white;
+  background-color: red;
+}
+
+#activeButton:active {
+  color: black;
+  background-color: yellow;
+}
+
+#focusInput:hover {
+  border: 12px solid green; 
+  padding: 20px;
+}  
+
+#focusInput:hover {
+  border: 12px solid green;
+  padding: 20px;
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: yellow;
+}
+
+input[id="disabledInput"]:disabled {
+  color: white;
+  background-color: gray;
+}

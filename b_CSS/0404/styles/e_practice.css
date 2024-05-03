@@ -1,0 +1,6 @@
+
+.list-item + .highlight {
+color: purple; }
+
+ul li ~ .highlight { 
+  background-color: lightblue; }

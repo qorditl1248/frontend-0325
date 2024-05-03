@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    table, th, td{
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      /* 셀과 행을 합쳐줌 */
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    h1,h2,p,ul.table,thead, tbody, th, td, img, a
+    /// 시맨틱 태그 아래 ///
+    header, main(section), footer
+    -->
+  
+  <h1>📞 연락처</h1>
+  <header>
+    <p>이메일: <a href="#">gildong@example.com</a> 📧</p>
+    <p>전화번호 : 010-1234-5678📱</p>
+    <p>프로젝트 문의나 채용 제안은 언제든지 환영합니다..</p>
+  </header>
+  <main>
+    <h2>🛠️ 기술 스킬</h2>
+    <ol type="A">
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>react</li>
+      <li>Node.js</li>
+    </ol>
+    <p>최신 웹 기술에 대한 지속적인 학습과 적용에 힘쓰고 있으며, 다양한 프레임워크와 라이브러리에 익숙합니다..</p>
+    <h2>🗓️ 일정 표</h2>
+    <table>
+      <thead>
+        <th>시간</th>
+        <th>월요일</th>
+        <th>화요일</th>
+        <th>수요일</th>
+        <th>목요일</th>
+        <th>금요일</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>09:00 ~ 10:00</td>
+          <td rowspan="2">프로젝트 회의</td>
+          <td>이메일 확인</td>
+          <td rowspan="3">코드 리뷰</td>
+          <td>문서작업</td>
+          <td>이메일 확인</td>
+        </tr>
+        <tr>
+          <td>10:00 ~ 11:00</td>
+          <td>문서작업</td>
+          <td>팀 미팅</td>
+          <td>개발 작업</td>
+        </tr>
+        <tr>
+          <td>11:00 ~ 12:00</td>
+          <td colspan="2">워크숍</td>
+          <td>개발 작업</td>
+          <td>이메일 확인</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <br/>
+  <footer>
+    © 2024 홍길동. 모든 권리 보유.
+    <br/>
+    <p>저를 찾아보세요: <a href="#">GitHub</a>|<a href="#">Linkedln</a></p>
+  </footer>
+</body>
+</html>
