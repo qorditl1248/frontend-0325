@@ -11,13 +11,13 @@
 
 function add(a, b) {
   return a + b;
-};
+}
 
-const subtract = function() {
+const subtract = function(a, b) {
   return a - b;
-};
+}
 
-const multiply = (a, b) => a * b;
+const multiply = ((a, b) => a * b)
 
 console.log(`Add: `, add(10, 5));
 console.log(`Subtract: `, subtract(10, 5));

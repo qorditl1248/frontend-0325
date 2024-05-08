@@ -74,7 +74,24 @@ console.log(book2.title);
 // 혼을 울리다: 경적을 울린다.
 
 let car = {
-  
+  model: 'Tesla Model S',
+  color: 'red',
+  year: 2020,
+  currentSpeed: 0,
+
+  accelerate: function(speed) {
+    this.currentSpeed += speed;
+    console.log(`속도를 증가시켜 지금 속도는 ${this.currentSpeed}km/h 입니다`);
+  },
+
+  stop: function() {
+    this.currentSpeed = 0; 
+    console.log(`차가 멈췄습니다.`);
+  },
+
+  honk: function() {
+    console.log(`경적을 울립니다.`);
+  }
 }
 
 //& 4. 스마트폰
@@ -91,3 +108,23 @@ let car = {
 // 전화 걸기: 전화를 건다.
 // 앱 실행하기: 앱을 실행한다.
 // 사진 찍기: 사진을 찍는다.
+
+let smartPhone = {
+  brand: 'Apple',
+  model: 'iPhone 12',
+  storage: '128GB',
+  batteryLevel: '85%',
+
+  call: function() {
+    console.log(`전화를 건다`);
+  },
+
+  app: function() {
+    console.log(`앱을 실행한다`);
+  },
+
+  takePhoto: function() {
+    console.log(`사진을 찍는다`);
+  }
+}
+

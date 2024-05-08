@@ -14,17 +14,18 @@ let person = {
 // : fruits 배열을 생성하고, 여러 가지 과일 이름을 문자열로 추가(3가지)
 // : 두 번째 과일을 콘솔에 출력
 
-const fruits = ['사과', '바나나', '망고스틴'];
-console.log(fruits[1]);
+const fruits = ['Apple', 'banana', 'cherry'];
+console.log(fruits[1]); // banana
+
 
 // 3. 함수 정의
 // : 두 개의 숫자를 매개변수로 받아 그 합을 반환하는 함수 add를 작성
 
-function add(num1, num2) {
-  return num1 + num2;
+function add(a, b) {
+  return a + b;
 }
-console.log(add(3, 4));
 
+console.log(add(3, 5)); // 8
 
 
 //? 문제 2
@@ -41,8 +42,8 @@ for(let key in person) {
 // : 초급에서 작성한 fruits의 모든 과일을 대문자로 변환하여 새 배열에 저장하고, 이 배열을 콘솔에 출력
 // : touppercase(대문자) tolowercase (소문자)
 
-const upperFruits = fruits.map(fruit => fruit.toUpperCase);
-console.log(upperFruits);
+const upperFruits = fruits.map(fruit => fruit.toUpperCase()); 
+console.log(upperFruits); // [ 'APPLE', 'BANANA', 'CHERRY' ]
 
 // 3. 함수 활용
 // : 두 개의 배열을 매개변수로 받아, 첫 번째 배열의 모든 요소에 두 번째 배열의 요소를 순서대로 더한 새 배열을 반환하는 함수를 작성
@@ -52,10 +53,10 @@ console.log(upperFruits);
 // >> [5, 7, 9]
 
 function combineArrays(arr1, arr2) {
-  return arr1.map((element, index) => element + arr2[index])
+  return arr1.map((element, index) => element + arr2[index]);
 }
 
-console.log(combineArrays);
+console.log(combineArrays([1, 2, 3], [4, 5, 6]));
 
 //? 문제 3
 // 1. 객체 깊은 복사

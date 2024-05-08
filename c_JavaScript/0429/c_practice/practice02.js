@@ -14,13 +14,14 @@ console.log(isLeapYear(2016));
 
 // ! 나머지 매개변수 연습 문제 
 // 최대값 찾기 함수 
-function findMax(...numbers){
+
+function findMax(...numbers) {
   if (numbers.length === 0) {
-    // 배열이 인자로 전달되지 않은 경우, return에 숫자가 입려되지 않았습니다로 출력
-    return '숫자가 입력되지 않았습니다'
-  }
+    // 배열이 인자로 전달되지 않은 경우
+    return '숫자가 입력되지 않았습니다.';
+  } 
   return Math.max(...numbers);
-};
+}
 
 console.log(findMax(10, 20, 30, 40 , 50)); // 50
 console.log(findMax()); 

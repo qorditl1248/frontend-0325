@@ -43,9 +43,12 @@ do {
 // prompt 함수는 항상 문자열을 반환
 
 let userInput;
+
 do {
   userInput = prompt('10보다 큰 수를 입력해주세요.');
 } while (userInput <= 10);
+
+//& do-while 문 사용 시 유의 사항 
 
 //! 반복문 실습
 // JS에서 사용할 HTML요소를 불러오기 
