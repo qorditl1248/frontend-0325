@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트 캡쳐링/버블링</title>
+</head>
+<body>
+  <div id="grandParent">
+    할아버지
+    <div id="parent">
+      아버지
+      <div id="child">
+        아들
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    const grandParent = document.getElementById('grandParent');
+    const parent = document.getElementById('parent');
+    const child = document.getElementById('child');
+    
+    document.body.addEventListener('click', function() {
+      console.log('바디 캡쳐링');
+    }, true);
+
+    grandParent.addEventListener('click', function() {
+      console.log('할아버지 캡쳐링');
+    }, true);
+
+    parent.addEventListener('click', function() {
+      console.log('아버지 캡쳐링');
+    }, true);
+
+    child.addEventListener('click', function(e) {
+      console.log('아들 캡쳐링');
+      // e.stopPropagation();
+    }, true);
+
+  </script>
+</body>
+</html>
