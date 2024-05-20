@@ -1,8 +1,8 @@
 //! 문제 1: 최댓값 찾기 max
 function findMax(array) {
-  let max = array[0];
+  let max = array[0]; // 임의로 0번째 인덱스값이 젤 크다고 설정
   let length = array.length;
-  for(let i = 1; i < length; i++) {
+  for(let i = 0; i < length; i++){
     if(array[i] > max) {
       max = array[i];
     }
@@ -19,7 +19,7 @@ console.log(findMax([10, 3, 45, 78, 6]));  // 출력: 78
 function findAverage(array) {
   let sum = 0;
   let length = array.length;
-  for(let i = 0; i < length; i++) {
+  for(let i = 0; i < length; i++ ) {
     sum += array[i];
   }
   return sum / length;
@@ -32,10 +32,10 @@ console.log(findAverage([10, 20, 30, 40, 50]));  // 출력: 30
 // 주어진 숫자 배열에서 홀수만 추출하여 '새로운 배열'로 반환하는 함수를 작성
 
 function findOdds(array) {
-  let odds = []; 
+  let odds = [];
   let length = array.length;
-  for(let i = 0; i < length; i++) {
-    if(array[i] % 2 !== 0){
+  for(let i = 0; i < length; i++ ){
+    if(array[i] % 2 !== 0) {
       odds.push(array[i]);
     }
   }
@@ -51,7 +51,7 @@ console.log(findOdds([1, 2, 3, 4, 5, 6, 7, 8, 9]));  // 출력: [1, 3, 5, 7, 9]
 function findMin(array) {
   let min = array[0];
   let length = array.length;
-  for(let i = 1; i < length; i++) {
+  for(let i = 0; i < length; i++) {
     if(array[i] < min) {
       min = array[i];
     }

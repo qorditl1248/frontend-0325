@@ -7,13 +7,12 @@
 // 이름의 타입: string
 // 나이의 타입: number
 
-let name = prompt("이름을 입력하세요");
-let age = prompt("나이를 입력하세요");
+let name = prompt('이름를 입력하세요');
+let age = prompt('나이을 입력하세요');
+let userAge = Number(age);
 
-let ageNumber = Number(age);
+console.log(`이름의 타입: ${typeof userAge}, 나이의 타입: ${typeof name}`);
 
-console.log(`이름의 타입 : `, typeof name);
-console.log(`나이의 타입 : `, typeof ageNumber);
 
 
 //! 문제 2
@@ -33,11 +32,9 @@ console.log(`나이의 타입 : `, typeof ageNumber);
 // let Number2 = Number(num2);
 // console.log(`두 수의 합은 ${Number1 + Number2} 입니다.`);
 
-  let num1 = Number(prompt("첫 번째 숫자를 입력"));
-  let num2 = Number(prompt("첫 번째 숫자를 입력"));
+const num1 = prompt('첫 번째 숫자를 입력하세요');
+const num2 = prompt('두 번째 숫자를 입력하세요');
+let Number1 = Number(num1);
+let Number2 = Number(num2);
 
-  console.log(`두 수의 합은 ${num1 + num2}`);
-
-  let num3 = '3';
-  let num4 = '4';
-  let result = `${Number(num3)} + ${Number(num4)}`;
+console.log(`두 수의 합은 ${Number1 + Number2}입니다.`);

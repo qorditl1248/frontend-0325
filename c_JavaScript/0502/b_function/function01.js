@@ -35,7 +35,7 @@ function print(count) {
 }
 
 // 함수 호출 
-callThreeTimes(print); // 인자로 함수를 전달 
+callThreeTimes(print); // 인자로 함수를 전달 (0번째 함수 호출, 1번째 함수 호출, 2번째 함수 호출)
 
 //& '콜백함수'로 익명함수 사용
 
@@ -49,7 +49,7 @@ const anonymous = function(count) {
 callThreeTimes(anonymous);
 
 
-//& '조건에 따른 콜백함수 사용
+//& '조건'에 따른 콜백함수 사용
 
 console.log(`=== 콜백 함수: 화살표 함수 ===`);
 

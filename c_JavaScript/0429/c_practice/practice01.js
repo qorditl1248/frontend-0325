@@ -17,11 +17,12 @@ const subtract = function(a, b) {
   return a - b;
 }
 
-const multiply = ((a, b) => a * b)
+const multiply = (a, b) => a * b;
 
-console.log(`Add: `, add(10, 5));
-console.log(`Subtract: `, subtract(10, 5));
-console.log(`Multiply: `, multiply(10, 5));
+
+console.log(add(10, 5));
+console.log(subtract(10, 5));
+console.log(multiply(10, 5));
 
 //! 문제 2
 // 함수의 재사용성과 모듈성 확인 문제

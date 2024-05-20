@@ -42,7 +42,8 @@ const alts = {
 
 //& 2) 썸네일 바에 이벤트 리스너 추가
 thumbBar.addEventListener('click', function(e) {
-  // 클릭된 요소가 이미지일 경우
+
+  // 클릭된 요소가 이미지일 경우 
   if (e.target.tagName === 'IMG') {
     // displayedImage의 src와 alt를 업데이트
     

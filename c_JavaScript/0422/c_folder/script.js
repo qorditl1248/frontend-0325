@@ -1,8 +1,9 @@
 
-const buttton = document.querySelector('button');
+const button = document.querySelector('button');
 
-buttton.addEventListener('click', printText);
+button.addEventListener('click', printText);
 
 function printText() {
-  console.log('버튼이 클릭되었습니다');
+  console.log(`버튼이 클릭되었습니다`);
+  console.log(`콘솔에 출력하세요`);
 }

@@ -99,10 +99,10 @@
 
 
 let currentYear = 2024;
-let birthYear = prompt("태어난 연도를 입력하세요");
-let age = currentYear - birthYear; 
+let birthYear = prompt('태어난 연도를 입력하세요');
+let age = currentYear - birthYear;
 
-document.write(`${birthYear}년에 태어난 사람의 나이는 ${age}세 입니다.`);
+document.write(`태어난 연도${birthYear}에 태어난 사람의 나이는 ${age}입니다. `)
 
 
 /*

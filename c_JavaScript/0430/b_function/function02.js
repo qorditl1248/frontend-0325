@@ -13,12 +13,12 @@ let anonymous; // 익명
 anonymous = function() {
   console.log(`첫 번째 익명 함수`);
 }
-anonymous();
+anonymous(); // 첫 번째 익명 함수
 
 anonymous = function () {
   console.log(`두 번째 익명 함수`);
 }
-anonymous();
+anonymous(); // 두 번째 익명 함수
 
 //! 2. 선언적 함수 사용
 // : 순차적인 코드 실행이 일어나기 전에 생성, 어디에서든 호출 가능
@@ -26,13 +26,13 @@ anonymous();
 // 선언적 함수 호출
 // 선언적 함수의 경우 호이스팅이 가능
 
-common(); // - 출력 됨, 첫 번째 선언적 함수, 호이스팅 됨 
+common(); // - 출력 됨, 첫 번째 선언적 함수, 호이스팅 됨 , "첫 번째 선언적 함수"
 
 function common() {
   console.log(`첫 번째 선언적 함수`);
 }
 
-common();
+common(); // 첫 번째 선언적 함수 
 
 //! 3. 선언적 함수와 익명 함수의 조합
 // 선언적 함수가 먼저 생성, 이후에 순차적인 코드를 진행을 시작하면서 익명 함수를 생성
@@ -42,10 +42,10 @@ common();
 function example() {
   console.log(`선언적 함수`);
 }
-example();
+example(); // 선언적 함수
 
-// 익명 함수로 재정의
+// 익명 함수로 재정의!
 example = function() {
   console.log(`익명 함수`);
 }
-example();
+example(); // 익명 함수 

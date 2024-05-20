@@ -10,21 +10,20 @@
 // 비가 내리는지 내리지 않는지에 대한 여부 EX) 비 내림 > true / 비 내리지 않음 > false
 // >> let 변수 사용
 
-const city = "부산"; 
+const city = '부산';
 // city = "서울"; >> Error
 
 let temperatures;
 temperatures = 10;
 temperatures = 20;
-console.log(temperatures);
 
 //? boolean 타입 변수 이름짓기 
 // : israining, isStudent, hasChildren, isEmpty
 // >> 의문문 형태로 동사가 앞선 형태의 이름이 주로 사용 
 
-let isRaining = false;
+let israining = false;
 
-console.log(`현재 ${city}의 기온은 ${temperatures}도 이며, ${isRaining}입니다.`);
+console.log(`현재 ${city}의 기온은 ${temperatures}이며 비가 ${israining}입니다.`);
 
 
 
@@ -37,7 +36,7 @@ console.log(`현재 ${city}의 기온은 ${temperatures}도 이며, ${isRaining}
 // 이름(name)과 나이(age) 변수를 선언하고, 각각 "철수"와 25로 초기화
 // 위의 두 변수를 사용하여 "철수님의 나이는 25세입니다."라고 출력
 
-let name = "철수";
+let name = '철수';
 let age = 25;
 console.log(`${name}님의 나이는 ${age}세 입니다.`);
 

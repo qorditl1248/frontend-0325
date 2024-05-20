@@ -16,7 +16,7 @@
 
 // EX) 두 수의 합을 계산하는 자바스크립트 함수 
 function multiply(a, b) {
-  return a * b;
+  return a + b;
 }
 
 console.log(multiply(2, 3)); // 6

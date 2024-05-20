@@ -15,8 +15,8 @@
 
 let num = 10; // 정수 자료형 
 let float = 10.5; // 실수(소수점) 자료형 
-console.log(typeof num);
-console.log(typeof float);
+console.log(typeof num); // number
+console.log(typeof float); // number
 
 // ? 2. 문자형 (string)
 // : 텍스트 데이터를 나타내는 타입
@@ -108,7 +108,7 @@ console.log(navValue); // NaN (데이터 타입이 아니라 값!!)
 // - 어떤 값과도 동등하지 X
 //   NaN === Nan (X)
 // - 연산에서 전파
-//  : 어떤 수학의 연산도 NaN과 만나면 결괏값이 NaN
+//  : 어떤 수학의 연산도 NaN과 만나면 결괏값이 NaN 
 
 // 3. 불리언으로 변환
 // Boolean() 함수 사용

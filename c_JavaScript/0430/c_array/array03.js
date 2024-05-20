@@ -24,4 +24,3 @@ let array2 = [4, 5, 6];
 // 스프레드 연산자 사용하기: 두 배열을 병합하여 새 배열을 만드는 코드를 작성
 
 let array3 = [...array1, ...array2];
-console.log(array3);

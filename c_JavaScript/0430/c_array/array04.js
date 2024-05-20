@@ -2,16 +2,13 @@
 // : 함수의 매개변수는 배열의 값을 사용
 
 //! 문제 1: 배열 합계 구하기
+
 function sumArray(array) {
   let sum = 0;
-
-  // 배열의 모든 요소에 접근하기 위해
-  // : for 반복문 + 인덱스 번호 사용
   let length = array.length;
   for(let i = 0; i < length; i++) {
     sum += array[i];
   }
-
   return sum;
 }
 

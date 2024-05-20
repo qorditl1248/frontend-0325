@@ -8,9 +8,8 @@
 
 const PI = 3.14; // 파이 상수 선언
 
-let r = Number(prompt("반지름을 입력하세요"));
-console.log(`원의 넓이는 ${PI * r * r}`);
-
+let r = prompt('반지름을 입력하세요');
+console.log(`원의 넓이는 ${PI * r * r} 입니다.`);
 
 
 
@@ -20,9 +19,8 @@ console.log(`원의 넓이는 ${PI * r * r}`);
 // >> 결과값을 콘솔창에 출력
 // >> 2.54 cm = 1 inch
 
-let inchs = Number(prompt("인치 값을 입력하세요"));
-
-console.log(`${inchs}인치는 ${inchs * 2.54}cm 입니다.`);
-
+let inch = prompt('인치를 입력하세요');
+let cm = inch * 2.54;
+console.log(cm);
 
 
