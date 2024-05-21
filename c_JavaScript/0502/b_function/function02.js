@@ -114,4 +114,3 @@ numbersArray
   .map(value => value * value)
   .forEach(value => console.log(value));
 
-

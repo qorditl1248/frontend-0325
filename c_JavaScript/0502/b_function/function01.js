@@ -60,10 +60,10 @@ function conditionFunc(number, callback) {
 }
 
 const arrow = (even) => {
-  console.log(`${even}은 짝수입니다.`);
+  console.log(`${even}은 짝수입니다.`); 
 }
 
 // 함수 호출 
-conditionFunc(4, arrow);
+conditionFunc(4, arrow); // 4는 짝수입니다.
 // conditionFunc(5, arrow); - 출력 안됨 5는 홀수여서 
 
