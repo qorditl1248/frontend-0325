@@ -11,12 +11,10 @@
 // : 해당 
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
 function double(numbers) {
-  return numbers.map(value => value * value);
+  return numbers.map(value => value * 2)
 }
 
-console.log(double(numbers));
 
 
 
