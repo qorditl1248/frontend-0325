@@ -89,7 +89,8 @@ function renderTime() {
   $second.innerHTML = sec;
 }
 
-const clock = setInterval(renderTime, 1000);
+const clock = 
+setInterval(renderTime, 1000);
 
 function displayDate(mm, dd, day) {
   let date = new Date();
