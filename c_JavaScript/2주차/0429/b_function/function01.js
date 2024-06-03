@@ -35,7 +35,7 @@ function calculateDistance(x1, y1, x2, y2) {
   let dx = x2 - x1;
   let dy = y2 - y1;
 
-  return Math.sqrt(dx*dx + dy*dy);
+  return Math.sqrt(dx*dx + dy*dy); // Math.sqrt - 숫자의 제곱근 반환 
 }
 
 console.log(calculateDistance(3, 1, 0, 0)); // 3.16
@@ -89,18 +89,23 @@ console.log(calculateDistance(3, 4, 0, 0)); // 5
 
 greet(); // 정상 실행 - 호이스팅 O 
 
-function greet () { //함수의 선언 - 함수 선언식
+function greet () { // 함수의 선언 - 함수 선언식
   console.log("안녕하세요, 함수 선언식입니다");
 }
 
 greet(); // 함수의 호출
 
+
+function greet () {
+  console.log('함수 선언식');
+}
+
 //& 함수 표현식(Function Expression)
 // : 함수를 변수에 할당하는 방식으로 함수를 정의
 // : 함수에 이름을 붙일 수도 있고, 붙이지 않을 수도 있다.
-// : 정의된 함수는 할당된 변수의 스코프 내에서만 사용 가능
+// : 정의된 함수는 '할당된 변수의 스코프 내에서만' 사용 가능
 // : 호이스팅이 적용되지 X
-//   선언(정의) 이전에 호출 불가
+// : 선언(정의) 이전에 호출 불가
 
 //? 기본 구조
 // const 변수명 = function(매개변수) {
@@ -120,6 +125,10 @@ const greeting = function() {
 }
 
 greeting();
+
+// const greeting = function() {
+//   console.log('함수 표현식');
+// }
 
 //& 화살표 함수(Arrow Function)
 // : 'ES6에서 도입'된 함수 정의 방식
@@ -141,6 +150,10 @@ const hello = () => {
 }
 
 hello();
+
+// const hello = () => {
+
+// }
 
 // 함수 본문(기능 구현부)이 단일문으로 작성되는 경우 중괄호와 return 키워드 생략이 가능
 

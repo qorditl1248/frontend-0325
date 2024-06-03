@@ -65,9 +65,10 @@ console.log(outcome2); // undefined
 // : 반환 결과를 변수에 담아 해당 변수를 콘솔창에 출력
 // - 함수 선언문 형식으로 작성
 
-function square(X) {
-  return x * X;
-};
+function square(x) {
+  return x * x;
+}
 
-let squareNum = square(2);
-console.log(squareNum);
+let result = square;
+
+console.log(result);
