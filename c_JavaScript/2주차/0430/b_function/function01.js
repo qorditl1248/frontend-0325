@@ -62,13 +62,13 @@ sample();
 
 //? 즉시 호출 함수를 사용한 이름 충돌 문제 해결 
 let commonVar = '전역변수';
-console.log(commonVar);
+console.log(commonVar); // 전역변수
 
 // 스코프(범위)의 충동을 방지하기 위해 함수를 사용
 // : 일반적으로 전역의 스코프 내의 작성 코드와 동일하게 동작
 (function () {
   let commonVar = 'IIFE 내부 변수'; //& 전역변수에 작성된 것 처럼 동작! (중요한 이론)
-  console.log(commonVar);
+  console.log(commonVar); // IIFE 내부 변수
 })();
 
-console.log(commonVar); // '전역변수'
+console.log(commonVar); // 전역변수

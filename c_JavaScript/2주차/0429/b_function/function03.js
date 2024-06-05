@@ -50,11 +50,12 @@ function print(num1, num2, ...numbers) {
   console.log(numbers);
 }
 
-print(1, 2, 3, 4, 5);
+print(1, 2, 3, 4, 5); // [ 3, 4, 5 ]
 // 1, 2의 값은 num1과 num2에 차례대로 할당 
 // 나머지 값은 numbers 배열에 할당
 
-print(11, 22, 33);
+print(11, 22, 33); // [ 33 ]
+
 
 // Math.min() 함수
 // : 여러 개의(복수의) 인자를 받아 그 중 최소값을 반환

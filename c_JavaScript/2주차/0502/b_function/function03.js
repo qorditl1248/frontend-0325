@@ -95,11 +95,11 @@ let fruits = ['사과', '바나나', '체리', '사과'];
 // : 조건을 만족하는 요소나 해당 인덱스를 찾는 메서드
 numbers = [5, 4, 3, 6 ,1];
 
-// find() : 해당 조건을 만족하는 첫 번째 요소를 반환 
+// find() : 해당 조건을 만족하는 '첫 번째 요소'를 반환 
 let firstOverFive = numbers.find(num => num > 5);
 
 // findIndex() : 해당 조건을 만족하는 첫 번째 요소의 인덱스를 반환 
 let firstOverFiveIndex = numbers.findIndex(num => num > 5);
 
-console.log(firstOverFive); // 6
-console.log(firstOverFiveIndex); // 3
+console.log(firstOverFive); // 그 값인 6
+console.log(firstOverFiveIndex); // 인덱스 번호인 3

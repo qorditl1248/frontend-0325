@@ -44,8 +44,9 @@ function example() {
 }
 example(); // 선언적 함수
 
-// 익명 함수로 재정의!
+// 익명 함수
+
 example = function() {
-  console.log(`익명 함수`);
+  console.log(`익명함수`);
 }
-example(); // 익명 함수 
+example(); // 익명함수

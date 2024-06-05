@@ -12,7 +12,7 @@
 //! 2. 배열의 사용 목적
 // - 집합적 데이터 관리 용이
 // - 순차적 접근 
-// - 다양한 데이터 타입을 함께 저장
+// - '다양한 데이터 타입'을 '함께' 저장
 // - 효율적인 데이터 처리
 
 //! 3. 배열 생성
@@ -73,26 +73,27 @@ console.log(sports); // [ '축구', 'baseball', <1 empty item>, '배구' ]
 let snacks = ['칸쵸', '초코송이', '포테토칩', '초코송이'];
 
 //? indexOf()
-// : 배열에서 지정된 요소를 찾고, 그 요소의 첫 번째 인덱스를 반환
-// : 해당 요소가 존재하지 않으면 -1을 반환
+// : 배열에서 지정된 요소를 찾고, 그 요소의 '첫 번째 인덱스'를 반환
+// : 해당 요소가 존재하지 않으면 '-1'을 반환
 
 let index = snacks.indexOf('초코송이'); 
 let notFound = snacks.indexOf('쿠쿠다스'); 
+
 console.log(index); // 1
-console.log(notFound); // -1 (존재하지 않기 때문에 -1의 값 반환)
+console.log(notFound); // -1 (존재하지 않기 때문에 -1의 값 반환), -1의 값은 배열에 존재하지 않음 
 
 //? lastIndexOf()
 // : 배열의 끝부터 시작하여 요소를 탐색
-// : 지정된 요소의 가장 마지막 인덱스를 반환
-// : 요소가 없으면 -1을 반환
+// : 지정된 요소의 가장 '마지막 인덱스'를 반환
+// : 요소가 없으면 '-1'을 반환
 
 let lastIndexOfSnacks = snacks.lastIndexOf('초코송이');
-console.log(lastIndexOfSnacks); // 3
+console.log(lastIndexOfSnacks); // 3, 마지막 인데스 번호임!
 
 //? includes() 중요함 (true, false)
 // : 배열에 특정 요소가 존재하는지 확인
 // : 그 결과를 불리언 값으로 반환 
-//   (요소의 인덱스X, 존재 유무만 확인)
+//   (요소의 인덱스X, 존재 유무만 확인) boolean
 
 let hasPotato = snacks.includes('포테토칩');
 console.log(hasPotato); // true
@@ -103,7 +104,7 @@ fruits = ['Apple', 'Banana'];
 //? 1. 배열 요소 추가 및 삭제
 
 // 요소 추가
-// push(): 배열의 끝에 하나 이상의 요소를 추가, 수정된 배열의 길이를 반환
+// push(): '배열의 끝'에 하나 이상의 요소를 추가, 수정된 '배열의 길이'를 반환
 
 let newLength = fruits.push('Cherry');
 console.log(newLength); // 3
@@ -113,7 +114,7 @@ console.log(newLength); // 3
 // - 빈 배열의 경우 undefined를 반환
 
 let lastFruit = fruits.pop();
-console.log(lastFruit); // Cherry
+console.log(lastFruit); // Cherry, 지워질 마지막 요소를 반환
 console.log(fruits); // [ 'Apple', 'Banana' ]
 
 // shift(): 배열의 첫 번째 요소를 제거, 그 요소를 반환

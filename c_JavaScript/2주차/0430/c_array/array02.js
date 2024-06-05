@@ -95,5 +95,5 @@ let matrix = [
 // : matrix 배열의 첫 번째 행의 두 번째 요소에 접근
 // : 앞에 행을 
 
-let item = matrix[2][0];
-console.log(item); // 7
+let item = matrix[0][1];
+console.log(item); // 2

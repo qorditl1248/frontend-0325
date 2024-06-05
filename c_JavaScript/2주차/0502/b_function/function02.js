@@ -21,8 +21,8 @@ const numbers = [273, 52, 103, 32, 57];
 
 // 배열명.forEach(각 요소들에게 적용할 함수 - 콜백 함수)
 
-numbers.forEach(function (value, index){
-  console.log(`${index}번째 요소 : ${value}`);
+numbers.forEach(function(value, index){
+  console.log(`${index}번째 요소: ${value}`);
 });
 
 // numbers.forEach(function (value, index, array){
@@ -45,7 +45,7 @@ console.log(array); // 요소값만 변화 O -  참조값 변경 X
 //& 2. map()
 // : 배열의 각 요소에 대해 함수를 적용하고 '새로운 배열을 생성하여 반환'
 // : 콜백 함수에서 리턴한 값들을 기반으로 새로운 배열을 생성
-// : 요소의 개수 변화 X
+// : 요소의 개수 변화 X, 요소의 길이 같음 안에 값이 변화
 
 console.log('=== map() ===');
 
@@ -71,7 +71,7 @@ const evenNumbers = basicArray.filter(function(value){
 console.log(`원래 배열 : ${basicArray}`);
 console.log(`짝수만 추출한 배열 : ${evenNumbers}`); // 요소의 개수가 변화 O 
 
-// - 배열의 콜백 함수 사용 시 주로 화살표 함수를 사용
+// - 배열의 콜백 함수 사용 시 주로 '화살표 함수'를 사용
 const arrowResult = basicArray.filter(value => value % 2 === 0); // [ 0, 2, 4 ]
 console.log(arrowResult);
 
@@ -79,15 +79,23 @@ console.log(arrowResult);
 let cars = ['audi', 'bmw', 'hyundai', 'volvo'];
 
 // 1. 전체 배열의 요소를 출력 - forEach()
-cars.forEach((car) => {
-  console.log(car); // 각 요소가 반복될 때 마다 실행할 함수
-});
+// cars.forEach((car) => {
+//   console.log(car); // 각 요소가 반복될 때 마다 실행할 함수
+// });
+
+cars.forEach(car => {
+  console.log( car);
+})
+
 
 // 2. 전체 배열의 요소를 대문자(영문자)로 변환 
 // 문자열데이터.toUpperCase() 
 
-let carsUpperCase = cars.map(car => car.toUpperCase());
-console.log(carsUpperCase); // [ 'AUDI', 'BMW', 'HYUNDAI', 'VOLVO' ]
+// let carsUpperCase = cars.map(car => car.toUpperCase());
+// console.log(carsUpperCase); // [ 'AUDI', 'BMW', 'HYUNDAI', 'VOLVO' ]
+
+let carsUpperCase = cars.map(value => value.toUpperCase());
+console.log(carsUpperCase);
 
 // 3. 전체 배열의 요소 중 문자열의 길이가 4보다 큰 요소만 반환 (boolean 값을 도출해서 true인 값만 보여줌)
 // 문자열데이터.length
@@ -105,9 +113,9 @@ console.log(longNamecars); // [ 'hyundai', 'volvo' ]
 let numbersArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // numbersArray 값들 중에 
-// - 짝수만 선택 (filter)
+// - 짝수만 선택 (filter) - 값이 변경 
 // - 해당 값들을 제곱 (map)
-// - 차례대로 콘솔에 출력 (forEach)
+// - 차례대로 콘솔에 출력 (forEach) - 차례대로니깐 한번씩 다 돔 
 
 numbersArray
   .filter(value => value % 2 === 0)
