@@ -1,7 +1,7 @@
 // 여행지 이름
 const cityNames = ['파리', '런던', '뉴욕', '서울', '도쿄'];
 
-// 각각의 여행지의 태그를 별도의 배열로 관리 
+// 각각의 여행지의 태그를 별도의 배열로 관리 []
 const tags = [
   ['역사', '문화', '쇼핑'], // 파리
   ['역사', '극장', '문화', '쇼핑'], // 런던
@@ -15,6 +15,7 @@ const tags = [
 const userInterest = "쇼핑";
 
 // includes(): 해당 배열에 요소가 포함 되어있는 경우 true를 반환, 그렇지 않으면 false 반환
+
 // [0, 1, 2, -1, 3]
 const matching = tags
   .map((tags, index) => tags.includes(userInterest) ? index : -1 )

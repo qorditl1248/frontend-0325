@@ -11,11 +11,14 @@
 // : 해당 
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
 function double(numbers) {
-  return numbers.map(value => value * 2)
+   return numbers * 2;
 }
 
+const doubled = numbers.map(double);
 
+console.log(doubled);
 
 
 //? 2. 특정 조건을 만족하는 요소의 수 세기 (filter 함수 사용)
@@ -27,7 +30,7 @@ function double(numbers) {
 const scores = [55, 60, 70, 80, 90, 45, 75, 85, 95, 65];
 
 function countPassingScores(scores) {
-  return scores.filter(value => value >= 60).length; 
+  return scores.filter(score => score >= 60).length;
 }
 
-console.log(countPassingScores(scores)); // 8 
+console.log(countPassingScores(scores));

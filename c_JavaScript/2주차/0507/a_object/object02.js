@@ -84,7 +84,7 @@ function showThis() {
   console.log(this);
 }
 
-showThis(); // 전역 상태 출력 
+showThis(); // 전역 상태 출력 undefined
 
 //? 메서드로서의 함수 내의 this 
 // : 객체의 메서드로 함수를 호출할 경우, this는 해당 메서드를 호출한 객체에 바인딩 
@@ -102,7 +102,7 @@ myObject.showThis();
 
 //? 생성자 함수에서의 this (중요함)
 // : 새 객체를 생성하기 위한 생성자 함수를 사용할 때 
-// , this는 새로 생성된 객체를 가리킴
+// , this는 '새로 생성된 객체'를 가리킴
 
 function Person(name) {
   // this.name은 해당 Person 생성자 함수로 생성되는 객체의 속성 

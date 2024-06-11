@@ -25,3 +25,5 @@ const result = numbers.reduce((total, current) => total * current, 1);
 
 console.log(result);
 
+// reduce -> 순차적으로 순회해서 하나의 값으로 줄여 return 함 
+// total - 누적값, current - 현재값, 뒤에 1은 초기값
