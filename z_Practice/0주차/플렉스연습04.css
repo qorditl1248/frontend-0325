@@ -1,0 +1,106 @@
+div {
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.containers {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 1000px;
+}
+
+.cotainer1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0px 20px;
+  width: 700px;
+  height: 900px;
+}
+
+.cotainer2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0px 20px;
+  width: 700px;
+  height: 900px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 40%; 
+}
+
+.box1 {
+  display: flex;
+  justify-content: space-between;
+  border-style: none;
+}
+
+
+.mini-box {
+  width: 100px;
+  height: 100px;
+}
+
+
+.box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%; 
+}
+
+
+.box2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40%; 
+}
+
+.box3 {
+  display: block;
+  border-style: none;
+}
+
+.box2-1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40%; 
+}
+
+.box4 {
+  display: flex;
+  flex-direction: column;
+  border-style: none;
+  height: 100%;
+}
+
+.box4 > .mini-box:nth-of-type(1) {
+  flex-grow: 1;
+}
+
+.box4 > .mini-box:nth-of-type(2) {
+  flex-grow: 1;
+}
+
+
+.box4 > .mini-box:nth-of-type(3) {
+  flex-grow: 1;
+}
+
+
+
+
+
+

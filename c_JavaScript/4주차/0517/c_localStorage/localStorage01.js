@@ -76,10 +76,10 @@ localStorage.setItem("key2", "value2");
 //! 예제: 사용자 이름 저장하기
 // 이 코드는 'username'이라는 키에 '이승아'라는 값을 로컬 스토리지에 저장
 // >> 해당 데이터는 이후에 localStorage.getItem('username')을 호출하여 언제든지 접근 가능
-localStorage.setItem('username', '이승아');
+localStorage.setItem("username", "이승아");
 
 //! 데이터 유형과 직렬화
-// 로컬 스토리지는 기본적으로 문자열 데이터만 저장 가능
+// 로컬 스토리지는 기본적으로 '문자열 데이터만' 저장 가능
 // >> 객체나 배열 같은 복잡한 데이터 유형을 저장하려면, 이를 문자열 형태로 직렬화
 // >> JavaScript에서는 JSON.stringify() 메소드를 사용하여 객체를 문자열로 변환 가능
 
@@ -89,7 +89,7 @@ let userInfo =  {
   age: 30
 }
 
-localStorage.setItem('사용자정보', JSON.stringify(userInfo));
+localStorage.setItem('사용자정보', JSON.stringify(userInfo)); 
 
 //& 보안 및 사용 제한
 

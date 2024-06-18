@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      border: 1px solid black;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding-top: 15px;
+      width: 600px;
+      height: 300px;
+    }
+
+    .inner, .inner2 {
+      display: flex;
+      justify-content: center;
+      border-style: none;
+      width: 500px;
+      height: 100px;
+    }
+
+    .box { 
+      width: 100px;
+      height: 100px;
+    }
+
+    .inner .box:nth-of-type(1) {
+      flex-grow: 1;
+    }
+
+    .inner .box:nth-of-type(2) {
+      flex-grow: 3;
+    }
+
+    .inner .box:nth-last-of-type(1) {
+      flex-grow: 1;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="inner">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="inner2">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+</body>
+</html>

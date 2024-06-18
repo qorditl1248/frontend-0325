@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      border: 1px solid black;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 600px;
+      height: 300px;
+    }
+
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      border-style: none;
+      width: 600px;
+      height: 100px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="inner">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="inner">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+</body>
+</html>

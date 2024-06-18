@@ -15,7 +15,7 @@ if (isNaN(userInput)) {
   console.log(`당신이 입력한 값은 ${userInput}입니다.`);
 }
 
-userInput = '  아이디';
+userInput = '아이디';
 
 // trim() 함수
 // : 문자열 양 끝의 공백을 제거한 값을 반환

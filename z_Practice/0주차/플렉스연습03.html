@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style> 
+    div {
+      border: 1px solid black;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      margin: 10px;
+      width: 600px;
+      height: 300px;
+    }
+
+    .box {
+      box-sizing: border-box;
+      display: flex;
+      border-style: none;
+      width: 100%;
+    }
+
+    .box1, .box2 {
+      margin: 5px;
+      width: 100px;
+      height: 70px;
+    }
+
+    .box2 {
+      margin-top: 10px;
+    }
+
+  
+    .box1:nth-of-type(1) {
+      flex-grow: 1;
+    }
+
+    .box1:nth-of-type(2) {
+      flex-grow: 2;
+    }
+
+    .box1:nth-of-type(3) {
+      flex-grow: 1;
+    }
+
+    .box2:nth-of-type(1) {
+      flex-grow: 1;
+    }
+
+    .box2:nth-of-type(2) {
+      flex-grow: 1;
+    }
+
+    .box2:nth-of-type(3) {
+      flex-grow: 2;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="box1"></div>
+      <div class="box1"></div>
+      <div class="box1"></div>
+      </div>
+    <div class="box">
+      <div class="box2"></div>
+      <div class="box2"></div>
+      <div class="box2"></div>
+    </div>
+  </div>
+</body>
+</html>
