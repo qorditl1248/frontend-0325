@@ -61,14 +61,18 @@ function addTodo(content) {
 
 
 //& 할 일을 삭제하는 함수
-// : 주어진 ID를 가진 할 일을 todos 배열에서 제거
-function deleteTodo(id) { // id: 제거할 요소의 id
-  // 주어진 id를 가진 할 일을 제외하고, 새로운 배열로 생성
-  todos = todos.filter(todo => todo.id !== id);
 
-  //? 변경된 할 일 목록을 콘솔에 출력
+function deleteTodo(id) {
+  todos = todos.filter(todo => todo.id !== id);
   displayTodos();
 }
+
+//  : 주어진 ID를 가진 할 일을 todos 배열에서 제거
+// id: 제거할 요소의 id
+//  주어진 id를 가진 할 일을 제외하고, '새로운 배열'로 생성
+//   //? 변경된 할 일 목록을 콘솔에 출력
+//   displayTodos();
+
 
 //& 할 일의 완료 상태를 변경하는 함수
 // : 주어진 ID를 가진 할 일의 완료 상태를 토글 >> 수정(Update)
