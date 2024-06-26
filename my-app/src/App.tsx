@@ -7,8 +7,13 @@ import { Route, Routes } from "react-router-dom";
 // 폴더명까지만 명시하는 경우 해당 폴더의
 // , index라는 이름의 파일을 가져옴
 import NavigationBar from "./components/NavigationBar";
+import Header from "./components/Header";
+
+
 import Index0621 from './views/0621';
 import Index0624 from './views/0624';
+import Index0625 from './views/0625';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,13 +28,17 @@ function App() {
           (a태그의 href="#"와 유사)
       */}
       <h1>Recat 수업 자료</h1>
+      <Header/>
       <NavigationBar/>
 
       {/* Routes 태그 */}
       <Routes>
         <Route path="/0621" element={<Index0621 />} />
         <Route path="/0624" element={<Index0624 />} />
+        <Route path="/0625" element={<Index0625 />} />
       </Routes>
+
+      <Footer/>  
     </>
   )
 }
