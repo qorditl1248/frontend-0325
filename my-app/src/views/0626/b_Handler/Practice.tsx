@@ -32,17 +32,21 @@ export default function Practice() {
 
   2. handleClick 이벤트는 컴포넌트 내에서 정의
     >> body의 색상 변경:
-    let bodyStyle = document.body.style;
+    let bodyStyle = document.body.style; 
     위의 변수에서 bodyStyle.backgroundColor 속성에 값을 전달하면 값이 지정
 
     >> 토글의 기능을 위해 if, else구문 사용 
   */
-  let bodyStyle = document.body.style;
 
+    function handleClick() {
+      let bodyStyle = document.body.style;
+      if(bodyStyle.backgroundColor === 'black') {
+        bodyStyle.backgroundColor = 'white'
+      } else {
+        bodyStyle.backgroundColor = 'black'
+      }
+    }
 
-  const handleClick = () => {  
-    
-  }
 
   return (
     <button onClick={handleClick}>

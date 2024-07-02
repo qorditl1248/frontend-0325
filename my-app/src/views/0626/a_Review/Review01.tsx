@@ -23,28 +23,24 @@ import React from 'react'
 //? 타입 정의
 // 1) DiaryEntryProps
 
-
 type DiaryEntryProps = {
-  data: string;
+  date: string;
   content: string;
-  mood: typeof Mood;
+  mood: Mood;
 }
 
 // 2) Mood >> '좋음' 또는 '나쁨' 또는 '보통' 중 하나
 
-const Mood = {
-  Good: '좋음',
-  Bad: '나쁨',
-  Normal: '보통',
-} 
+type Mood = '좋음' | '나쁨' | '보통'; 
 
 //& DiaryEntry
-const DiaryEntry = ({data, content, mood}: DiaryEntryProps) => {
+const DiaryEntry = ({date, content, mood}: DiaryEntryProps) => {
+
   return (
     <div>
-      <h3>data: {data}</h3>
+      <h3>data: {date}</h3>
       <p>content: {content}</p>
-      <p>mood: {mood.Good}</p>
+      <p>mood: {mood}</p>
     </div>
   );
 };
@@ -57,18 +53,17 @@ const DiaryEntry = ({data, content, mood}: DiaryEntryProps) => {
 //   : 선택된 기분 상태에 따라 일기를 필터링하여 표시
 //     >> filter / map을 사용하여 일기 목록을 처리
 
-interface DiaryList {
-  entries: DiaryEntryProps[];
-  filteredMood: string; 
-}
+
 
 //& DiaryList
-const DiaryList = () => {  
-  
+
+const DiaryList: React.FC<{entries: DiaryEntryProps[]}>= ({entries}) => {  
+
+
   return (
     <div>
       {/* 배열을 렌더링할 때 각각의 고유값을 전달 key값 */}
-
+      {}
     </div>
   );
 }
@@ -88,7 +83,7 @@ export default function Review01() {
       date: '2024-04-19', content: '피자를 먹었습니다.', mood: '좋음'
     },
     {
-      date: '2024-04-18', content: '평범한 하루였습니다.', mood: '나쁨'
+      date: '2024-04-18', content: '평범한 하루였습니다.', mood: '보통'
     },
     {
       date: '2024-04-17', content: '평범한 하루였습니다.', mood: '나쁨'
