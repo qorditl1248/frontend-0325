@@ -2,6 +2,7 @@
 
 //! 1. 프로미스(Promise)의 정의
 // : 자바스크립트에서 비동기 연산의 최종 완료 또는 실패와 그 결과값을 나타내는 객체
+// : 완료 또는 실패를 가져옴
 //   >> 콜백 지옥(callback hell)을 피하고, 비동기 처리를 보다 깔끔하게 관리
 
 //! 2. 프로미스의 상태(3가지)
@@ -29,9 +30,9 @@ const myPromise = new Promise((resolve, reject) => {
   const condition = true; // 조건을 설정하는 예시
 
   if (condition) {
-    resolve('프로미스가 이행되었습니다.');
+    resolve("프로미스가 이행되었습니다.");
   } else {
-    reject('프로미스가 거부되었습니다.');
+    reject("프로미스가 거부되었습니다.");
   }
 });
 
@@ -50,14 +51,13 @@ const myPromise = new Promise((resolve, reject) => {
 //? .finally()
 // : 프로미스의 성공/실패 여부와 상관없이 실행될 콜백 함수를 등록
 
-
 // 계단식 전달 방법을 사용한 콜백함수와 달리
 // , Promise는 then과 catch 블럭을 사용하여 코드의 가독성을 증가
 
 myPromise
   .then((result) => {
     console.log(result);
-    return '절차가 다음 단계로 넘어갑니다.'; // '프로미스가 이행되었습니다.'
+    return "절차가 다음 단계로 넘어갑니다."; // '프로미스가 이행되었습니다.'
   })
   .then((nextResult) => {
     console.log(nextResult); // '절차가 다음 단계로 넘어갑니다.'
@@ -67,7 +67,7 @@ myPromise
     console.error(error);
   })
   .finally(() => {
-    console.log('작업 완료'); // 성공, 실패와 상관없이 수행
+    console.log("작업 완료"); // 성공, 실패와 상관없이 그냥 수행 
   });
 
 //! 프로미스 체이닝 & 에러 핸들링
@@ -80,9 +80,9 @@ myPromise
 function fetchData() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve('데이터');
+      resolve("데이터");
     }, 3000);
-  })
+  });
 }
 
 function processData(data) {
@@ -90,13 +90,13 @@ function processData(data) {
     setTimeout(() => {
       resolve(`${data}를 사용합니다.`);
     }, 3000);
-  })
+  });
 }
 
 fetchData()
-  .then(result => processData(result))
-  .then(processedResult => console.log(processedResult))
-  .catch(error => console.error(error));
+  .then((result) => processData(result))
+  .then((processedResult) => console.log(processedResult))
+  .catch((error) => console.error(error));
 
 //? 에러 핸들링
 // : 프로미스는 어떠한 체이닝(연결) 속에서도 .catch()메서드를 사용하면 체인 내의 어느 지점에서든 발생한 에러를 잡아낼 수 있음
